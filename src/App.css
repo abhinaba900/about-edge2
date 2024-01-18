@@ -164,7 +164,7 @@ figure {
   width: 60%;
   height: 50%;
   max-width: 80%;
-  border: 1px solid;
+  border: 1px solid #70707066;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ figure {
   left: .5em;
 }
 
-.data-text > #expert-name {
+.data-text > .expert-name {
   font-size: 1.5em;
   font-family: var(--PO);
   font-weight: bold 600;
@@ -189,12 +189,30 @@ figure {
   text-align: center;
   border: 1px solid;
   position: relative;
-  left: -2.8em;
-  top: -1.1em;
+  left: -60%;
+  top: -50%;
   background-color: var(--071D49);
   color: var(--white);
 }
-#expert {
+.data-text > .expert-name-2 {
+  font-size: 1.5em;
+  font-family: var(--PO);
+  font-weight: bold 600;
+  height: 1.2em;
+  width: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid;
+  position: relative;
+  left: -60%;
+  top: -35%;
+  background-color: var(--071D49);
+  color: var(--white);
+}
+.expert {
   position: relative;
   top: -1em;
 }
@@ -225,6 +243,7 @@ figure {
   body {
     word-wrap: break-word;
     word-break: break-all;
+    overflow-x: hidden;
   }
   .top-section {
     height: auto;
@@ -255,15 +274,199 @@ figure {
     
   }
 
+  .data-text > .expert-name {
+    font-size: 1.2em;
+    left: -2.5em;
+    top: -1em;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .image-section {
     width: 100%;
   }
   .comment {
     width: 100%;
+    gap: .5em;
+    padding: .2em;
+    margin: .2em;
+  }
+
+  .expert{
+   font-size: .666em;
+   word-break: normal;
+  }
+  .image-section > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-x: hidden;
+  }
+
+  .top-section {
+    height: auto;
+    padding-top: 2em;
+  }
+
+  .heading-section > h3 {
+    font-size: 3.5em;
+  }
+
+  .routes {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .body-container {
+    max-width: 100%;
+  }
+
+  .by-the-experts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .comment-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20em; /* Adjusted margin-top for iPad Mini */
+  }
+
+  .data-text > .expert-name {
+    left: -2em;
+    top: -0.6em;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+.data-text > .expert-name-2{
+  left: -55%;
+  top: -50%;
+}
+.data-text > .expert-name{
+  left: -55%;
+  top: -50%;
+  font-size: 1.5em;
+}
+  .image-section {
+    width: 100%;
+  }
+
+  .comment {
+    width: 100%;
+    gap: 0.5em;
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+
+  .expert {
+    font-size: 0.666em;
+    word-break: normal;
   }
 
   .image-section > img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-x: hidden;
+  }
+
+  .top-section {
+    height: auto;
+    padding-top: 2em;
+  }
+
+  .heading-section > h3 {
+    font-size: 3.5em;
+  }
+
+  .routes {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .body-container {
+    max-width: 100%;
+  }
+
+  .by-the-experts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .comment-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20em;
+    margin-top: 29em;
+    align-self: auto;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .data-text > .expert-name {
+    left: -2em;
+    top: -0.6em;
+    font-size: 1.5em; /* Adjusted font size for iPad Pro */
+  }
+
+  .data-text > .expert-name-2 {
+    left: -55%;
+    top: -50%;
+    font-size: 1.5em; /* Adjusted font size for iPad Pro */
+  }
+.data-text > .expert-name{
+  left: -55%;
+  top: -50%;
+}
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .comment {
+    width: 100%;
+    gap: 0.5em;
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+
+  .expert {
+    font-size: 0.666em;
+    word-break: normal;
+  }
+
+  .image-section > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 540px) and (max-width:720px) {
+  .data-text > .expert-name{
+    left: -55%;
+    top: -50%;
+    font-size: 1.5em;
   }
 }

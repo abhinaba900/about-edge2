@@ -72,20 +72,20 @@ function AllComponent() {
           <div className="comment-section">
             <div className="comment">
               <div className="data-text">
-                <span id="expert-name">E</span>
-                <span id="expert">Expert EDGE</span>
+                <span className="expert-name">E</span>
+                <span className="expert">Expert EDGE</span>
               </div>
               <div className="data-text">
-                <span id="expert-name">D</span>
-                <span id="expert">Delivery EDGE</span>
+                <span className="expert-name">D</span>
+                <span className="expert">Delivery EDGE</span>
               </div>
               <div className="data-text">
-                <span id="expert-name">G</span>
-                <span id="expert">Geographical EDGE</span>
+                <span className="expert-name-2">G</span>
+                <span className="expert">Geographical EDGE</span>
               </div>
               <div className="data-text">
-                <span id="expert-name">E</span>
-                <span id="expert">Employability EDGE</span>
+                <span className="expert-name-2">E</span>
+                <span className="expert">Employability EDGE</span>
               </div>
             </div>
             <div className="image-section">
