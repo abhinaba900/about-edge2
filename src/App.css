@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  --headingColor: #231f20;
+  --textColor: #7b7979;
+  font-family: "poppins";
+  text-align: left;
+
+  --white: #ffffff;
+  --black: #231f20;
+  --black60: rgba(35, 31, 32, 0.6);
+  --D3D3D3: #d3d3d3;
+  --F3F3F3: #f3f3f3;
+  --00BED6: #00bed6;
+  --0075C9: #0075c9;
+  --071D49: #071d49;
+  --707070: #707070;
+  --70707066: #70707066;
+  --headerSpace: 6.313em;
+  --PO: "Poppins";
+  font-family: var(--PO);
+}
+* table tr td {
+  margin: 0;
+}
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  max-width: 100%;
+  width: 100%;
+  height: 16em;
+  position: relative;
+  padding-top: 3.313em;
+  color: var(--white);
+  background-color: var(--071D49);
+}
+
+.heading-section {
+  max-width: 100%;
+  height: 8em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.heading-section > h3 {
+  color: var(--white);
+  font-size: 5.188em;
+  line-height: 1.2;
+  margin-top: 0.5em;
+  font-family: var(--PO);
+}
+
+#about {
+  font-family: var(--PO);
+  font-weight: 400;
+  letter-spacing: 0.011em;
+}
+
+#edge {
+  font-family: var(--PO);
+  font-weight: 900;
+  letter-spacing: auto;
+}
+
+.routes {
+  font-family: var(--PO);
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 0.8em;
+  margin-left: 7em;
+}
+
+.body-container {
+  max-width: 80%;
+  margin: 4em auto;
+  font-family: var(--PO);
+}
+
+.by-the-experts-section {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--PO);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2em;
+}
+
+.by-the-experts-section > div {
+  padding: 1em;
+}
+
+.by-the-experts-first-section > h4 {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+.by-the-experts-first-section > article {
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--textColor);
+  font-weight: normal 400;
+  margin-bottom: 1em;
+  font-family: var(--PO);
+}
+.by-the-experts-second-section > article {
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--textColor);
+  font-weight: normal 400;
+  margin-bottom: 1em;
+  font-family: var(--PO);
+}
+
+.video-player {
+  height: 41.25em;
+  width: 100%;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.comment {
+  font-family: var(--PO);
+  font-weight: 400;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+  position: relative;
+}
+
+.data-text {
+  width: 60%;
+  height: 50%;
+  max-width: 80%;
+  border: 1px solid;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 1em;
+  position: relative;
+  left: .5em;
+}
+
+.data-text > #expert-name {
+  font-size: 1.5em;
+  font-family: var(--PO);
+  font-weight: bold 600;
+  height: 1.2em;
+  width: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid;
+  position: relative;
+  left: -2.8em;
+  top: -1.1em;
+  background-color: var(--071D49);
+  color: var(--white);
+}
+#expert {
+  position: relative;
+  top: -1em;
+}
+
+.comment-section {
+  max-width: 100%;
+  height: 25em;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin-top: 4em;
+}
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.image-section > img {
+  width: 80%;
+  height: 80%;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .top-section {
+    height: auto;
+    padding-top: 2em;
+  }
+
+  .heading-section > h3 {
+    font-size: 3.5em;
+  }
+
+  .routes {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .body-container {
+    max-width: 100%;
+  }
+
+  .by-the-experts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .comment-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15em;
+    
+  }
+
+  .image-section {
+    width: 100%;
+  }
+  .comment {
+    width: 100%;
+  }
+
+  .image-section > img {
+    width: 100%;
+    height: auto;
+  }
+}
